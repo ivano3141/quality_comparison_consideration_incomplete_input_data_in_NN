@@ -10,9 +10,16 @@ Ref.: "Processing of missing data by neural networks
 " Marek Smieja, Łukasz Struski, Jacek Tabor, Bartosz Zieliński, Przemysław Spurek | https://arxiv.org/abs/1805.07405
 
 
+
+
+Content:
 Link for data to downlod:
 https://drive.google.com/drive/folders/1wWl7oByt3Ny8R2oZWyOC5a02iBS6MoIb?usp=sharing
 
+- D = Dataset
+- 8 Similar .py scripts 
+ - 4 Scripts for 4 datasets to predict values with Smieja.
+ - 4 Scripts for 4 datasets to predict values with common methods.
 
 Description Example gmm_D0.py:
 
