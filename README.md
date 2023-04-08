@@ -18,8 +18,8 @@ https://drive.google.com/drive/folders/1wWl7oByt3Ny8R2oZWyOC5a02iBS6MoIb?usp=sha
 
 - D = Dataset
 - 8 Similar .py scripts 
- - 4 Scripts for 4 datasets to predict values with Smieja.
- - 4 Scripts for 4 datasets to predict values with common methods.
+ - 3 Scripts for 3 datasets to predict values with Smieja.
+ - 3 Scripts for 3 datasets to predict values with common methods.
 
 Description Example gmm_D0.py:
 
@@ -55,20 +55,20 @@ Description Example gmm_D0.py:
 
 Description Example ref_D0.py:
 
-This code defines a class called inpute_values which is used to import, generate missing values and impute the credit card transaction dataset, as well as train and evaluate machine learning models. The inpute_values class has four methods: import_data, gen_miss_values, inpute_data, and model. It also has an evaluate function that takes in predicted and actual labels and computes various classification metrics like accuracy, precision, recall, F1-score, AUC score, etc. The class also defines a save_txt function that saves the evaluation results as a text file.
+This code defines a class called InputeValues, which is used to import, generate missing values, and impute the credit card transaction dataset. It is also used to train and evaluate machine learning models. The InputeValues class has four methods: import_data, gen_miss_values, inpute_data, and model. It also has an evaluate function that takes predicted and actual labels as inputs and computes various classification metrics such as accuracy, precision, recall, F1-score, AUC score, etc. The class also defines a save_txt function that saves the evaluation results as a text file.
 
-After defining the inpute_values class, the code creates four instances of the class to impute missing values using four different imputation methods: mean imputation, MICE, kNN, and random forest imputation. Each of these instances is used to train and evaluate three different machine learning models (Model_1, Model_2, and Model_3) using a range of missing values rates (0.3, 0.6, and 0.9).
+After defining the InputeValues class, the code creates four instances of the class to impute missing values using four different imputation methods: mean imputation, MICE, kNN, and random forest imputation. Each of these instances is used to train and evaluate three different machine learning models (Model_1, Model_2, and Model_3) using a range of missing values rates (0.3, 0.6, and 0.9).
 
 The steps to perform this process are:
 
 1. Import libraries like TensorFlow/Keras, pandas, numpy, sklearn, etc.
 
-2. Define the inpute_values class with its methods and functions.
+2. Define the InputeValues class with its methods and functions.
 
-3. Create four instances of the inpute_values class (inpute_mean, inpute_MICE, inpute_kNN, inpute_RF) to impute missing values using four different imputation methods: mean imputation, MICE, kNN, and random forest imputation.
+3. Create four instances of the InputeValues class (inpute_mean, inpute_MICE, inpute_kNN, inpute_RF) to impute missing values using four different imputation methods: mean imputation, MICE, kNN, and random forest imputation.
 
-4. Load the credit card transaction dataset using the import_data function from the inpute_values class
+4. Load the credit card transaction dataset using the import_data function from the InputeValues class.
 
-5. Train and evaluate three different machine learning models (Model_1, Model_2, and Model_3) using each of the four instances of the inpute_values class (inpute_mean, inpute_MICE, inpute_kNN, inpute_RF) for different missing value rates (0.3, 0.6, and 0.9).
+5. Train and evaluate three different machine learning models (Model_1, Model_2, and Model_3) using each of the four instances of the InputeValues class (inpute_mean, inpute_MICE, inpute_kNN, inpute_RF) for different missing value rates (0.3, 0.6, and 0.9).
 
 6. Save the evaluation results for each combination of model, imputation method, and missing value rate as a text file.
