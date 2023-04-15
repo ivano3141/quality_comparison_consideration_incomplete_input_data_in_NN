@@ -1,0 +1,2 @@
+{'confusion_matrix': array([[4015,    1],
+       [   9,    0]], dtype=int64), 'accuracy': 0.9975155279503105, 'precision': array([0.99776342, 0.        ]), 'recall': array([0.999751, 0.      ]), 'f1_score': array([0.99875622, 0.        ]), 'avg_accuracy': 0.4988817097415507, 'auc': [0.2686476316954405, 0.5998229305002214]}
